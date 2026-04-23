@@ -1,0 +1,501 @@
+/* ==================================================
+   RESET & BASE
+================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fafafa;
+}
+
+/* Acessibilidade (opcional e segura) */
+a:focus-visible {
+    outline: 2px solid #dc2626;
+    outline-offset: 3px;
+}
+
+/* ==================================================
+   HEADER
+================================================== */
+header {
+    background: linear-gradient(135deg, #dc2626 0%, #991b1b 100%);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.1rem;
+    opacity: 0.95;
+    text-align: center;
+}
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+nav {
+    background-color: #fff;
+    padding: 0.7rem 0.7rem 0.1rem;
+    position: sticky;
+    top: 0;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: #dc2626;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #991b1b;
+    text-decoration: underline;
+}
+
+/* Mobile menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #dc2626;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* ==================================================
+   LAYOUT
+================================================== */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* ==================================================
+   TYPOGRAPHY
+================================================== */
+h2 {
+    color: #dc2626;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+    border-bottom: 3px solid #dc2626;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    color: #333;
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.8rem;
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+ul,
+ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+li {
+    margin-bottom: 0.8rem;
+}
+
+strong {
+    color: #dc2626;
+    font-weight: 600;
+}
+
+em {
+    font-style: italic;
+    color: #555;
+}
+
+/* ==================================================
+   LINKS & CTA
+================================================== */
+a {
+    color: #dc2626;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #991b1b;
+    text-decoration: underline;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #dc2626;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+}
+
+.cta-button:hover {
+    background-color: #991b1b;
+    color: white;
+}
+
+.cta-wrapper {
+	text-align: center;
+	margin: 40px 0;
+}
+
+.cta-note {
+	text-align: center;
+	font-size: 0.85rem;
+	color: #666;
+	margin-top: 6px;
+}
+
+/* ==================================================
+   INTRO
+================================================== */
+.intro-section {
+    background: linear-gradient(135deg, #fef2f2 0%, #fff5f5 100%);
+    border-left: 4px solid #dc2626;
+}
+
+.intro-section p {
+    font-size: 1.05rem;
+    color: #333;
+}
+
+/* ==================================================
+   PRODUCT IMAGE
+================================================== */
+.product-image-container {
+    margin: 1.5rem 0;
+    text-align: center;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    background-color: #fff;
+    transition: transform 0.3s ease;
+}
+
+.product-image-container:hover {
+    transform: translateY(-5px);
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+.image-caption {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+    color: #666;
+    background-color: #f9fafb;
+    border-top: 1px solid #eee;
+    font-style: italic;
+}
+
+/* ==================================================
+   PRODUCT GRID
+================================================== */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.product-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #eee;
+}
+
+.product-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.product-card-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+    color: #dc2626;
+    margin-bottom: 0.8rem;
+}
+
+.product-card p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.product-card .cta-button {
+    margin-top: auto;
+    text-align: center;
+    width: 100%;
+}
+
+/* ==================================================
+   LISTS & FAQ
+================================================== */
+.product-list {
+    background-color: #f9fafb;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin: 1rem 0;
+}
+
+.product-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.product-item strong {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.faq-item {
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-item h3 {
+    margin-top: 0;
+    color: #dc2626;
+}
+
+.faq-item p {
+    margin: 0.8rem 0;
+}
+
+/* ==================================================
+   AFFILIATE
+================================================== */
+.affiliate-notice {
+    background-color: #fffae5;
+    border-left: 4px solid #f59e0b;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    color: #78350f;
+}
+
+/* ==================================================
+   REFERENCES
+================================================== */
+.references {
+    background-color: #f7f9fd;
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin-top: 1.5rem;
+}
+
+.references h3 {
+    margin-top: 0;
+}
+
+.references ol {
+    margin-left: 1.5rem;
+}
+
+.references li {
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+}
+
+.references a {
+    word-break: break-all;
+}
+
+/* ==================================================
+   FOOTER
+================================================== */
+footer {
+    background-color: #1f2937;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+footer p {
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+footer a {
+    color: #aaaeb6;
+}
+
+footer a:hover {
+    color: #ffffff;
+}
+
+/* ==================================================
+   RESPONSIVE
+================================================== */
+@media (max-width: 768px) {
+
+    header {
+        padding: 1.5rem 1rem;
+    }
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 0.5rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+        gap: 0;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav a {
+        display: block;
+        padding: 1rem;
+        border-bottom: 1px solid #f3f4f6;
+    }
+
+    main {
+        padding: 1rem 0.5rem;
+    }
+
+    section {
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+
+    p {
+        text-align: left;
+        font-size: 0.95rem;
+    }
+
+    .cta-button {
+        display: block;
+        text-align: center;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+}
