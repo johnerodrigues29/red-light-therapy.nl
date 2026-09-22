@@ -3,7 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
   const nav = document.getElementById('site-nav');
   const groups = [...document.querySelectorAll('.nav-group')];
   const closeGroups = () => groups.forEach(group => { group.open = false; });
+  const backdrop = document.querySelector('.menu-backdrop');
+  const outside = [...document.body.children].filter(el => !el.matches('.site-header,.menu-backdrop,script,.skip-link'));
+  const setOpen = open => {
+    document.body.classList.toggle('menu-open', open);
+    outside.forEach(el => { el.inert = open; });
+  };
   const closeMenu = () => {
+    setOpen(false);
     nav?.classList.remove('is-open');
     toggle?.setAttribute('aria-expanded', 'false');
     toggle?.setAttribute('aria-label', 'Menu openen');
@@ -12,16 +19,24 @@ document.addEventListener('DOMContentLoaded', () => {
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
       const open = nav.classList.toggle('is-open');
+      setOpen(open);
       toggle.setAttribute('aria-expanded', String(open));
       toggle.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
       if (!open) closeGroups();
     });
+    backdrop?.addEventListener('click', () => { closeMenu(); toggle.focus(); });
     nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
     groups.forEach(group => group.addEventListener('toggle', () => {
       if (group.open) groups.filter(other => other !== group).forEach(other => { other.open = false; });
     }));
     document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeMenu(); });
     document.addEventListener('keydown', event => {
+      if (event.key === 'Tab' && nav.classList.contains('is-open')) {
+        const focusable = [...document.querySelectorAll('.site-header a, .site-header button, .site-header summary')].filter(el => el.getClientRects().length);
+        const first = focusable[0], last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
       if (event.key !== 'Escape') return;
       const openGroup = groups.find(group => group.open);
       if (openGroup) { openGroup.open = false; openGroup.querySelector('summary').focus(); }
