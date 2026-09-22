@@ -1,12 +1,33 @@
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('mobile-menu');
-  const list = document.querySelector('nav ul');
-  if (toggle && list) {
-    const close = () => { list.classList.remove('active'); toggle.setAttribute('aria-expanded', 'false'); toggle.setAttribute('aria-label', 'Menu openen'); };
-    toggle.addEventListener('click', () => { const open = list.classList.toggle('active'); toggle.setAttribute('aria-expanded', String(open)); toggle.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen'); });
-    list.querySelectorAll('a').forEach(a => a.addEventListener('click', close));
-    document.addEventListener('keydown', e => { if (e.key === 'Escape' && list.classList.contains('active')) { close(); toggle.focus(); } });
-    document.addEventListener('click', e => { if (!e.target.closest('nav')) close(); });
+  const nav = document.getElementById('site-nav');
+  const groups = [...document.querySelectorAll('.nav-group')];
+  const closeGroups = () => groups.forEach(group => { group.open = false; });
+  const closeMenu = () => {
+    nav?.classList.remove('is-open');
+    toggle?.setAttribute('aria-expanded', 'false');
+    toggle?.setAttribute('aria-label', 'Menu openen');
+    closeGroups();
+  };
+  if (toggle && nav) {
+    toggle.addEventListener('click', () => {
+      const open = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(open));
+      toggle.setAttribute('aria-label', open ? 'Menu sluiten' : 'Menu openen');
+      if (!open) closeGroups();
+    });
+    nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
+    groups.forEach(group => group.addEventListener('toggle', () => {
+      if (group.open) groups.filter(other => other !== group).forEach(other => { other.open = false; });
+    }));
+    document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeMenu(); });
+    document.addEventListener('keydown', event => {
+      if (event.key !== 'Escape') return;
+      const openGroup = groups.find(group => group.open);
+      if (openGroup) { openGroup.open = false; openGroup.querySelector('summary').focus(); }
+      else if (nav.classList.contains('is-open')) { closeMenu(); toggle.focus(); }
+    });
+    window.matchMedia('(min-width: 721px)').addEventListener('change', closeMenu);
   }
   document.querySelectorAll('[data-copy-code]').forEach(button => {
     button.addEventListener('click', async () => {
