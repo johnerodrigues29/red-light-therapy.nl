@@ -58,33 +58,47 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Mailchimp POST, adapted from the supplied newsletter form.
+// Read Mailchimp's JSONP response so only accepted requests show success.
 document.querySelectorAll('.newsletter-form').forEach(form => {
   const button = form.querySelector('.newsletter-submit');
   const status = form.querySelector('.newsletter-status');
-  const direct = form.querySelector('[data-direct-submit]');
-  form.addEventListener('submit', async event => {
-    if (event.submitter === direct) return;
+  form.addEventListener('submit', event => {
     event.preventDefault();
-    if (button.disabled || !form.reportValidity()) return;
-    if (form.querySelector('.newsletter-honey input').value) return;
+    if (button.disabled || !form.reportValidity() || form.querySelector('.newsletter-honey input').value) return;
     button.disabled = true;
-    button.textContent = 'Bezig met verzenden…';
+    button.textContent = 'Bezig met aanmelden…';
     status.textContent = '';
-    direct.hidden = true;
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 15000);
-    try {
-      await fetch(form.action, {method:'POST', mode:'no-cors', body:new FormData(form), signal:controller.signal});
-      // An opaque response cannot confirm acceptance by Mailchimp.
-      status.textContent = 'Je aanvraag is verstuurd. Controleer je inbox en spammap op een eventuele bevestigingsmail. Bevestig je aanmelding als daarom wordt gevraagd. Niets ontvangen? Open het Mailchimp-formulier om je aanmelding te controleren.';
-      button.textContent = 'Aanvraag verstuurd';
-      direct.hidden = false;
-    } catch (_) {
-      status.textContent = 'We konden de verzending niet afronden. Probeer opnieuw of open het Mailchimp-formulier.';
+    status.classList.remove('is-success');
+    const callback = 'newsletter_' + Date.now() + '_' + Math.random().toString(36).slice(2);
+    const url = new URL(form.action);
+    url.pathname = url.pathname.replace('/post', '/post-json');
+    new FormData(form).forEach((value, key) => url.searchParams.set(key, value));
+    url.searchParams.set('c', callback);
+    const script = document.createElement('script');
+    let timer;
+    const cleanup = () => {
+      clearTimeout(timer);
+      script.remove();
+      // Ignore a delayed response after timeout.
+      window[callback] = () => {};
+      setTimeout(() => { delete window[callback]; }, 60000);
+    };
+    const fail = () => {
+      cleanup();
       button.disabled = false;
       button.textContent = 'Opnieuw proberen';
-      direct.hidden = false;
-    } finally { clearTimeout(timeout); }
+      status.textContent = 'Aanmelden is niet gelukt. Controleer je e-mailadres en probeer het opnieuw. Ben je al ingeschreven? Dan hoef je niets te doen.';
+    };
+    window[callback] = response => {
+      if (response?.result !== 'success') { fail(); return; }
+      cleanup();
+      button.textContent = 'Aangemeld ✓';
+      status.classList.add('is-success');
+      status.textContent = '🎉 Je aanmelding is gelukt! Welkom erbij! Je hoort voortaan als eerste over onze promoties en exclusieve kortingscodes zodra ze beschikbaar zijn.';
+    };
+    script.onerror = fail;
+    timer = setTimeout(fail, 15000);
+    script.src = url.href;
+    document.head.appendChild(script);
   });
 });
