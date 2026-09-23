@@ -44,21 +44,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     window.matchMedia('(min-width: 721px)').addEventListener('change', closeMenu);
   }
-  document.querySelectorAll('[data-copy-code]').forEach(button => {
-    button.addEventListener('click', async () => {
-      const code = button.dataset.copyCode;
-      const status = button.parentElement.querySelector('.copy-status');
-      try {
-        await navigator.clipboard.writeText(code);
-        status.textContent = 'Gekopieerd! Plak de code bij het afrekenen.';
-      } catch (_) {
-        const text = button.parentElement.querySelector('.coupon-code');
-        const range = document.createRange(); range.selectNodeContents(text);
-        const selection = window.getSelection(); selection.removeAllRanges(); selection.addRange(range);
-        status.textContent = 'Kopieer de geselecteerde code handmatig: ' + code;
-      }
-    });
-  });
   document.addEventListener('click', e => {
     const link = e.target.closest('a[href]');
     if (!link) return;
@@ -70,5 +55,36 @@ document.addEventListener('DOMContentLoaded', () => {
       affiliate_brand: brand, product_name: link.dataset.product || link.textContent.trim(),
       link_url: link.href, page_path: window.location.pathname, transport_type: 'beacon'
     });
+  });
+});
+
+// Mailchimp POST, adapted from the supplied newsletter form.
+document.querySelectorAll('.newsletter-form').forEach(form => {
+  const button = form.querySelector('.newsletter-submit');
+  const status = form.querySelector('.newsletter-status');
+  const direct = form.querySelector('[data-direct-submit]');
+  form.addEventListener('submit', async event => {
+    if (event.submitter === direct) return;
+    event.preventDefault();
+    if (button.disabled || !form.reportValidity()) return;
+    if (form.querySelector('.newsletter-honey input').value) return;
+    button.disabled = true;
+    button.textContent = 'Bezig met verzenden…';
+    status.textContent = '';
+    direct.hidden = true;
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 15000);
+    try {
+      await fetch(form.action, {method:'POST', mode:'no-cors', body:new FormData(form), signal:controller.signal});
+      // An opaque response cannot confirm acceptance by Mailchimp.
+      status.textContent = 'Je aanvraag is verstuurd. Controleer je inbox en spammap op een eventuele bevestigingsmail. Bevestig je aanmelding als daarom wordt gevraagd. Niets ontvangen? Open het Mailchimp-formulier om je aanmelding te controleren.';
+      button.textContent = 'Aanvraag verstuurd';
+      direct.hidden = false;
+    } catch (_) {
+      status.textContent = 'We konden de verzending niet afronden. Probeer opnieuw of open het Mailchimp-formulier.';
+      button.disabled = false;
+      button.textContent = 'Opnieuw proberen';
+      direct.hidden = false;
+    } finally { clearTimeout(timeout); }
   });
 });
