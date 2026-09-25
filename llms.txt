@@ -1,0 +1,45 @@
+# Red Light Therapy NL
+
+> Nederlandstalige website over roodlichttherapie voor thuis, met productanalyses, koopgidsen en vergelijkingen van LED-maskers en roodlichtpanelen. Gericht op lezers in Nederland. Website: https://red-light-therapy.nl/
+
+Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 25 september 2026.
+
+De reviews zijn redactionele analyses van openbare productinformatie en aankoopcriteria. Ze zijn geen eigen praktijktests, laboratoriummetingen of persoonlijk medisch advies. Fabrikantopgaven en algemene onderzoeksresultaten zijn niet hetzelfde als onafhankelijk bewijs voor een specifiek product. De artikelen vermelden bronnen en beperkingen.
+
+Het siteaanbod omvat momenteel artikelen over Nuvibody en Liroma. Er staan geen reviews van MITO LIGHT of VIVO in dit overzicht zolang die artikelen niet zijn gepubliceerd. Het overzicht is geen ranglijst van merken of producten.
+
+De website bevat affiliatelinks; aankopen via deze links kunnen commissie opleveren. Eventuele exclusieve kortingscodes worden per nieuwsbrief gedeeld en niet in dit bestand gepubliceerd. Prijzen, beschikbaarheid, uitvoeringen, garantie en retourvoorwaarden kunnen wijzigen. Raadpleeg de datum en bronnen van het betreffende artikel en de actuele voorwaarden van de verkoper.
+
+De onderstaande links verwijzen naar de canonieke HTML-pagina's. Dit bestand biedt een inhoudswegwijzer; de volledige artikelen bevatten de context, nuances en bronverwijzingen. Toegangsregels staan afzonderlijk in robots.txt.
+
+## Start en uitleg
+
+- [Roodlichttherapie voor thuis](https://red-light-therapy.nl/): Startpagina met uitleg, beperkingen en links naar behandelde producten.
+- [Rood licht voor het gezicht](https://red-light-therapy.nl/rood-licht-therapie-gezicht): Achtergrond over gezichtstoepassingen en aandachtspunten bij apparaten voor thuis.
+
+## LED-maskers
+
+- [Liroma GLOW LED Masker review](https://red-light-therapy.nl/liroma-glow-led-masker-review): Analyse van specificaties, pasvorm, aankoopvoorwaarden en verschillen tussen algemene gebruikstekst en handleiding; geen eigen praktijktest.
+- [Nuvibody AURA+ LED-masker review](https://red-light-therapy.nl/nuvibody-aura-led-masker-review): Productanalyse van een gezichtsmasker als mogelijke aankoopoptie.
+
+## Roodlichtpanelen
+
+- [Nuvibody CORE 300 review](https://red-light-therapy.nl/nuvibody-core-300-review): Analyse van een compact paneel voor kleinere zones en thuisgebruik.
+- [Nuvibody CORE 1500 review](https://red-light-therapy.nl/nuvibody-core-1500-review): Analyse van een groter paneel, met aandacht voor opstelling en aankoopkeuzes.
+- [Liroma PrimeFORCE Elite Gen5 review](https://red-light-therapy.nl/liroma-primeforce-elite-gen5-review): Specificaties, verrijdbare opstelling, prijs en aankoopvoorwaarden.
+
+## Vergelijkingen
+
+- [Nuvibody CORE 300 vs CORE 1500](https://red-light-therapy.nl/nuvibody-core-300-vs-core-1500): Keuzehulp tussen een compact en een groter paneel.
+- [Liroma PrimeFORCE Elite Gen5 vs Nuvibody CORE 1500](https://red-light-therapy.nl/liroma-primeforce-elite-gen5-vs-nuvibody-core-1500): Vergelijking van formaat, setinhoud, prijs en voorwaarden; geen gelijkstelling van verschillende opstellingen.
+
+## Over de website
+
+- [Contact en redactionele werkwijze](https://red-light-therapy.nl/contact): Achtergrond, contactgegevens en uitleg over de totstandkoming van de artikelen.
+- [Affiliate disclosure](https://red-light-therapy.nl/affiliate-disclaimer): Uitleg over commerciële samenwerkingen en affiliatelinks.
+
+## Optional
+
+- [Privacyverklaring](https://red-light-therapy.nl/privacyverklaring): Informatie over persoonsgegevens, nieuwsbrief en externe diensten.
+- [Sitemap](https://red-light-therapy.nl/sitemap.xml): XML-overzicht van de pagina's in de sitemap.
+- [Robots.txt](https://red-light-therapy.nl/robots.txt): Aanwijzingen voor crawlers.
