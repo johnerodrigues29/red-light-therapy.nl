@@ -1,0 +1,17 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Red Light Therapy NL",
+    "documentationUrl": "https://red-light-therapy.nl/llms.txt",
+    "logoUrl": "https://red-light-therapy.nl/favicon.png"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:red-light-therapy.nl:documentation:site-guide",
+      "displayName": "Red Light Therapy NL — inhoudswegwijzer",
+      "type": "text/plain",
+      "url": "https://red-light-therapy.nl/llms.txt",
+      "description": "Nederlandstalig overzicht van productanalyses, vergelijkingen en de redactionele werkwijze. Statische documentatie; geen interactieve agent of medische adviesdienst."
+    }
+  ]
+}
