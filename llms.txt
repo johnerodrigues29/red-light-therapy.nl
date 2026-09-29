@@ -2,7 +2,7 @@
 
 > Nederlandstalige website over roodlichttherapie voor thuis, met productanalyses, koopgidsen en vergelijkingen van LED-maskers en roodlichtpanelen. Gericht op lezers in Nederland. Website: https://red-light-therapy.nl/
 
-Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 25 september 2026.
+Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 29 september 2026.
 
 De reviews zijn redactionele analyses van openbare productinformatie en aankoopcriteria. Ze zijn geen eigen praktijktests, laboratoriummetingen of persoonlijk medisch advies. Fabrikantopgaven en algemene onderzoeksresultaten zijn niet hetzelfde als onafhankelijk bewijs voor een specifiek product. De artikelen vermelden bronnen en beperkingen.
 
@@ -30,6 +30,7 @@ De onderstaande links verwijzen naar de canonieke HTML-pagina's. Dit bestand bie
 
 ## Vergelijkingen
 
+- [Liroma GLOW vs Nuvibody AURA+](https://red-light-therapy.nl/liroma-glow-vs-nuvibody-aura): Vergelijking van gezichtsmasker en bundel, totale prijs, bediening en voorwaarden.
 - [Nuvibody CORE 300 vs CORE 1500](https://red-light-therapy.nl/nuvibody-core-300-vs-core-1500): Keuzehulp tussen een compact en een groter paneel.
 - [Liroma PrimeFORCE Elite Gen5 vs Nuvibody CORE 1500](https://red-light-therapy.nl/liroma-primeforce-elite-gen5-vs-nuvibody-core-1500): Vergelijking van formaat, setinhoud, prijs en voorwaarden; geen gelijkstelling van verschillende opstellingen.
 
