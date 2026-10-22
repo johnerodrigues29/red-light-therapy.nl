@@ -2,7 +2,7 @@
 
 > Nederlandstalige website over roodlichttherapie voor thuis, met productanalyses, koopgidsen en vergelijkingen van LED-maskers en roodlichtpanelen. Gericht op lezers in Nederland. Website: https://red-light-therapy.nl/
 
-Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 20 oktober 2026.
+Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 22 oktober 2026.
 
 De reviews zijn redactionele analyses van openbare productinformatie en aankoopcriteria. Ze zijn geen eigen praktijktests, laboratoriummetingen of persoonlijk medisch advies. Fabrikantopgaven en algemene onderzoeksresultaten zijn niet hetzelfde als onafhankelijk bewijs voor een specifiek product. De artikelen vermelden bronnen en beperkingen.
 
@@ -24,6 +24,7 @@ De onderstaande links verwijzen naar de canonieke HTML-pagina's. Dit bestand bie
 
 ## Roodlichtpanelen
 
+- [VIVO Lux 35 S.2 review](https://red-light-therapy.nl/vivo-lux-35-s-2-review): Documentaire analyse van een compact tafelmodel, bediening en optionele opstelling.
 - [Liroma PrimeFORCE Advanced Gen5 review](https://red-light-therapy.nl/liroma-primeforce-advanced-gen5-review): Documentaire analyse van formaat, opstelling, prijs en verschillen in meetdocumentatie.
 - [Nuvibody LITE 300 review](https://red-light-therapy.nl/nuvibody-lite-300-review): Tafelmodel zonder timer; documentaire analyse van specificaties, prijs en aankoopvoorwaarden.
 - [VIVO Lux 150 S.2 review](https://red-light-therapy.nl/vivo-lux-150-s-2-review): Middelgroot paneel, optionele standaard en aankoopkosten.
