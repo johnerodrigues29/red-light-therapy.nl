@@ -5,3 +5,16 @@
 @media(max-width:760px){.review-landing .hero-inner{padding:24px 20px 0}.review-hero-grid{grid-template-columns:minmax(0,1fr);gap:26px}.review-hero-copy h1{font-size:32px}.review-visual{padding:12px;border-radius:16px}.review-visual img{height:320px;padding:16px}.review-hero-copy .hero-subtitle{font-size:18px}.review-spec-strip{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:24px}.review-spec-strip>div{padding:15px;border-bottom:1px solid var(--line)}.review-spec-strip>div:nth-child(2n){border-right:0}.review-spec-strip>div:nth-last-child(-n+2){border-bottom:0}.review-spec-strip dd{font-size:14px}.review-landing .page-contents{padding:0 20px}.review-landing main{padding:0 20px 40px}.review-landing main>section{padding:28px 20px;border-radius:14px}.review-landing main>section>p{font-size:15px}.review-landing .product-grid{grid-template-columns:minmax(0,1fr)}.review-buy:not([hidden]){display:flex;align-items:center;gap:12px;position:fixed;z-index:85;bottom:0;left:0;right:0;background:#fff;border-top:1px solid var(--line);box-shadow:0 -4px 22px #202a2d14;padding:12px 18px calc(12px + env(safe-area-inset-bottom,0px))}.review-buy-label{flex:1;min-width:0}.review-buy-label small{display:block;font-size:10px;color:var(--muted)}.review-buy-label strong{display:block;font-size:12px;line-height:1.4;overflow-wrap:anywhere}.review-buy .cta-button{flex-shrink:0;font-size:12px;padding:12px 15px}.review-landing.buy-bar-visible{padding-bottom:90px}}
 @media(prefers-reduced-motion:reduce){.review-landing .site-header{transition:none}}
 @media print{.review-buy{display:none!important}.review-landing main>section{border:0;padding:16px 0}.review-hero-grid{display:block}}
+
+/* FAQ: full-width accordion rows, matching the GuiaVolt interaction. */
+.review-landing #faq{background:var(--soft)}
+.review-landing #faq>h2{text-align:center;margin-bottom:28px}
+.review-landing .review-faq{max-width:none;background:white;border-radius:12px;margin:12px 0}
+.review-landing .review-faq summary{display:flex;align-items:center;justify-content:space-between;gap:24px;list-style:none;padding:22px 24px;font-size:16px}
+.review-landing .review-faq summary::-webkit-details-marker{display:none}
+.review-landing .review-faq summary::after{content:'+';font-size:24px;font-weight:400;color:var(--red);flex:none;line-height:1}
+.review-landing .review-faq[open] summary::after{content:'−'}
+.review-landing .review-faq[open] summary{background:white}
+.review-landing .review-faq>p{margin:0;padding:0 24px 24px;color:var(--muted);font-size:15px;line-height:1.8}
+.review-landing .review-faq summary:focus-visible{outline:2px solid var(--red);outline-offset:-4px;border-radius:10px}
+@media(max-width:760px){.review-landing .review-faq summary{padding:18px;font-size:15px;gap:16px}.review-landing .review-faq>p{padding:0 18px 20px}.review-landing #faq>h2{text-align:left}}
