@@ -2,7 +2,7 @@
 
 > Nederlandstalige website over roodlichttherapie voor thuis, met productanalyses, koopgidsen en vergelijkingen van LED-maskers en roodlichtpanelen. Gericht op lezers in Nederland. Website: https://red-light-therapy.nl/
 
-Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 26 oktober 2026.
+Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 27 oktober 2026.
 
 De reviews zijn redactionele analyses van openbare productinformatie en aankoopcriteria. Ze zijn geen eigen praktijktests, laboratoriummetingen of persoonlijk medisch advies. Fabrikantopgaven en algemene onderzoeksresultaten zijn niet hetzelfde als onafhankelijk bewijs voor een specifiek product. De artikelen vermelden bronnen en beperkingen.
 
@@ -59,3 +59,5 @@ De onderstaande links verwijzen naar de canonieke HTML-pagina's. Dit bestand bie
 - [Liroma PrimeFORCE Compact Gen5 vs Nuvibody CORE 300](https://red-light-therapy.nl/liroma-primeforce-compact-gen5-vs-nuvibody-core-300): Documentaire vergelijking van compacte panelen, bediening, kosten en voorwaarden.
 
 - [MITO LIGHT Biohacker 5.0 review](https://red-light-therapy.nl/mito-light-biohacker-5-0-review): Documentaire analyse van formaat, montage, bediening en aankoopkosten.
+
+- [Nuvibody LITE 1500 review](https://red-light-therapy.nl/nuvibody-lite-1500-review): Documentaire analyse van formaat, montage, bediening en aankoopkosten.
