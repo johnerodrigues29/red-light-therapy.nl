@@ -21,6 +21,10 @@ main{max-width:900px;margin:auto;padding:34px 32px 70px}main:focus{outline:none}
 .menu-toggle[aria-expanded=true]{background:var(--red)}.menu-toggle[aria-expanded=true] .menu-icon:before{top:7px;transform:rotate(45deg)}.menu-toggle[aria-expanded=true] .menu-icon:after{top:7px;transform:rotate(-45deg)}
 .site-nav{display:flex;position:absolute;top:calc(100% + 10px);left:12px;width:calc(100% - 24px);max-height:calc(100dvh - 104px);padding:22px 14px 14px;gap:6px;background:var(--paper);border:1px solid var(--line);border-radius:22px;box-shadow:0 18px 50px #14202126;overflow-y:auto;overscroll-behavior:contain;visibility:hidden;opacity:0;transform:translateY(-8px);transition:opacity .18s,transform .18s,visibility .18s}
 .site-nav.is-open{visibility:visible;opacity:1;transform:translateY(0)}
+/* Keep long accordion groups at their natural height; scroll the menu, not clipped flex items. */
+.site-nav>*{flex-shrink:0}
+.site-nav{max-height:calc(100vh - 104px);max-height:calc(100dvh - 104px);overflow-x:hidden;-webkit-overflow-scrolling:touch}
+.nav-dropdown a{overflow-wrap:anywhere}
 .nav-intro{display:block;padding:0 12px 16px}.nav-intro>span{font-size:9px;letter-spacing:2px;font-weight:700;color:var(--red)}.nav-intro p{font-size:22px;font-weight:650;letter-spacing:-.6px;line-height:1.3;margin:6px 0 0}
 .nav-group{border:1px solid var(--line);background:white;border-radius:13px;overflow:hidden}.site-nav>a,.nav-group>summary{font-size:16px;min-height:56px;padding:14px 16px;border-radius:12px}.nav-group>summary:after{margin-right:3px;color:var(--red)}.nav-group[open]>summary{color:var(--red);background:#f5eee9}
 .nav-dropdown{border:0;padding:6px 8px 10px;margin:0;background:white}.nav-dropdown a{min-height:46px;display:flex;align-items:center;font-size:14px;border-radius:8px;padding:12px}.nav-dropdown a[aria-current]{background:#f5eee9;font-weight:600}.site-nav>a{margin-top:3px;background:var(--soft)}.site-nav>a:after{content:"↗";color:var(--red)}
