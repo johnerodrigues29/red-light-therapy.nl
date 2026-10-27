@@ -1,0 +1,16 @@
+.mito-offer{box-sizing:border-box;width:min(480px,calc(100% - 32px));max-height:calc(100dvh - 32px);margin:auto;padding:36px 28px 24px;border:1px solid #e9ddd7;border-radius:24px;background:#fffaf7;color:#262321;box-shadow:0 24px 90px #20110b40;text-align:center;overflow:auto}
+.mito-offer::backdrop{background:#17100ec2;backdrop-filter:blur(4px)}
+.mito-offer-close{position:absolute;top:8px;right:10px;display:grid;place-items:center;width:44px;height:44px;border:0;border-radius:50%;background:transparent;color:#51413b;font-size:28px;cursor:pointer}
+.mito-offer-close:hover{background:#f3e7e1}
+.mito-offer-label{display:block;margin:8px 0 14px;font-size:11px;font-weight:800;letter-spacing:.13em;color:#9b342a}
+.mito-offer h2{font-size:clamp(25px,6vw,32px);line-height:1.15;margin:0 0 16px}
+.mito-offer p{line-height:1.6;margin:0 0 18px}
+.mito-offer-code{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:14px;padding:18px 12px;border:1px dashed #bd7567;border-radius:14px;background:#fff}
+.mito-offer-code strong{font-size:23px;letter-spacing:.06em;user-select:all}
+.mito-offer-copy{padding:10px 14px;border:1px solid #e2c9c0;background:#f9ebe5;color:#74352b;border-radius:9px;font:inherit;font-size:13px;font-weight:700;cursor:pointer;min-height:44px}
+.mito-offer .mito-offer-status{min-height:24px;margin:10px 0;font-size:13px;color:#586446}
+.mito-offer .mito-offer-go{display:block;margin:0;width:100%;box-sizing:border-box}
+.mito-offer .mito-offer-note{font-size:12px;color:#736760;margin:16px 0 0}
+.mito-offer button:focus-visible,.mito-offer a:focus-visible{outline:3px solid #9b342a;outline-offset:3px}
+body.mito-offer-open{overflow:hidden}
+@media(max-width:400px){.mito-offer{padding:36px 20px 22px}}
