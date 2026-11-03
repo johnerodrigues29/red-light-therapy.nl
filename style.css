@@ -38,3 +38,10 @@ main{max-width:900px;margin:auto;padding:34px 32px 70px}main:focus{outline:none}
 @media(max-width:720px){.newsletter-section{padding:40px 22px}.newsletter-inner{grid-template-columns:1fr;gap:16px}.newsletter-form{padding:22px}.newsletter-copy h2{text-wrap:initial}}
 @media print{.newsletter-section{display:none}}
 .newsletter-status.is-success{padding:18px;border-radius:12px;background:#eaf2e8;border:1px solid #c6d9c1;color:#284b2b;font-size:14px;font-weight:600;line-height:1.7}
+
+/* Desktop dropdowns stay within the viewport and contain their own scrolling. */
+html{scrollbar-gutter:stable}
+body.menu-open{overflow:hidden}
+@media(min-width:721px){
+ .nav-dropdown{max-height:calc(100vh - 112px);max-height:calc(100dvh - 112px);overflow-y:auto;overflow-x:hidden;overscroll-behavior:contain;scrollbar-gutter:stable;scroll-padding-block:8px;-webkit-overflow-scrolling:touch}
+}

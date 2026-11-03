@@ -2,6 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('mobile-menu');
   const nav = document.getElementById('site-nav');
   const groups = [...document.querySelectorAll('.nav-group')];
+  const desktopMenu = window.matchMedia('(min-width: 721px)');
   const closeGroups = () => groups.forEach(group => { group.open = false; });
   const backdrop = document.querySelector('.menu-backdrop');
   const outside = [...document.body.children].filter(el => !el.matches('.site-header,.menu-backdrop,script,.skip-link'));
@@ -28,6 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     nav.querySelectorAll('a').forEach(link => link.addEventListener('click', closeMenu));
     groups.forEach(group => group.addEventListener('toggle', () => {
       if (group.open) groups.filter(other => other !== group).forEach(other => { other.open = false; });
+      setOpen(nav.classList.contains('is-open') || (desktopMenu.matches && groups.some(item => item.open)));
     }));
     document.addEventListener('click', event => { if (!event.target.closest('.site-header')) closeMenu(); });
     document.addEventListener('keydown', event => {
@@ -42,7 +44,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (openGroup) { openGroup.open = false; openGroup.querySelector('summary').focus(); }
       else if (nav.classList.contains('is-open')) { closeMenu(); toggle.focus(); }
     });
-    window.matchMedia('(min-width: 721px)').addEventListener('change', closeMenu);
+    desktopMenu.addEventListener('change', closeMenu);
   }
   document.addEventListener('click', e => {
     const link = e.target.closest('a[href]');
