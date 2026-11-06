@@ -2,7 +2,7 @@
 
 > Nederlandstalige website over roodlichttherapie voor thuis, met productanalyses, koopgidsen en vergelijkingen van LED-maskers en roodlichtpanelen. Gericht op lezers in Nederland. Website: https://red-light-therapy.nl/
 
-Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 5 november 2026.
+Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 6 november 2026.
 
 De reviews zijn redactionele analyses van openbare productinformatie en aankoopcriteria. Ze zijn geen eigen praktijktests, laboratoriummetingen of persoonlijk medisch advies. Fabrikantopgaven en algemene onderzoeksresultaten zijn niet hetzelfde als onafhankelijk bewijs voor een specifiek product. De artikelen vermelden bronnen en beperkingen.
 
@@ -76,3 +76,7 @@ De onderstaande links verwijzen naar de canonieke HTML-pagina's. Dit bestand bie
 ## Nieuw op 5 november 2026
 
 - [VIVO BioPhoton+ review](https://red-light-therapy.nl/vivo-biophoton-plus-review): Documentaire analyse van opstelling, bediening, meetdocumentatie en aankoopvoorwaarden; geen eigen praktijktest.
+
+## Keuzehulp voor thuis
+
+- [Beste roodlichttherapie panelen voor thuis (2026)](https://red-light-therapy.nl/beste-roodlichttherapie-panelen-voor-thuis): Permanente koopgids met vier opties per opstelling; actuele openbare prijzen en kosten van montage, zonder eigen testwinnaars.
