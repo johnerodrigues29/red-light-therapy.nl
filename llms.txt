@@ -2,7 +2,7 @@
 
 > Nederlandstalige website over roodlichttherapie voor thuis, met productanalyses, koopgidsen en vergelijkingen van LED-maskers en roodlichtpanelen. Gericht op lezers in Nederland. Website: https://red-light-therapy.nl/
 
-Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 21 november 2026.
+Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 23 november 2026.
 
 De reviews zijn redactionele analyses van openbare productinformatie en aankoopcriteria. Ze zijn geen eigen praktijktests, laboratoriummetingen of persoonlijk medisch advies. Fabrikantopgaven en algemene onderzoeksresultaten zijn niet hetzelfde als onafhankelijk bewijs voor een specifiek product. De artikelen vermelden bronnen en beperkingen.
 
@@ -22,6 +22,8 @@ De onderstaande links verwijzen naar de canonieke HTML-pagina's. Dit bestand bie
 - [Roodlichttherapie aanbiedingen en Black Friday 2026](https://red-light-therapy.nl/roodlichttherapie-aanbiedingen): Permanent overzicht van gecontroleerde openbare productprijzen; exclusieve codes alleen per e-mail.
 
 ## LED-maskers
+
+- [Liroma GLOW LED Décolleté review](https://red-light-therapy.nl/liroma-glow-led-decollete-review): LED-band voor hals en bovenborst. Pasvorm, bediening en aankoopvoorwaarden.
 
 - [Liroma GLOW LED Masker review](https://red-light-therapy.nl/liroma-glow-led-masker-review): Analyse van specificaties, pasvorm, aankoopvoorwaarden en verschillen tussen algemene gebruikstekst en handleiding; geen eigen praktijktest.
 - [Nuvibody AURA+ LED-masker review](https://red-light-therapy.nl/nuvibody-aura-led-masker-review): Productanalyse van een gezichtsmasker als mogelijke aankoopoptie.
