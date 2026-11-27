@@ -2,7 +2,7 @@
 
 > Nederlandstalige website over roodlichttherapie voor thuis, met productanalyses, koopgidsen en vergelijkingen van LED-maskers en roodlichtpanelen. Gericht op lezers in Nederland. Website: https://red-light-therapy.nl/
 
-Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 25 november 2026.
+Taal: Nederlands (nl-NL). Dit overzicht is bijgewerkt op 27 november 2026.
 
 De reviews zijn redactionele analyses van openbare productinformatie en aankoopcriteria. Ze zijn geen eigen praktijktests, laboratoriummetingen of persoonlijk medisch advies. Fabrikantopgaven en algemene onderzoeksresultaten zijn niet hetzelfde als onafhankelijk bewijs voor een specifiek product. De artikelen vermelden bronnen en beperkingen.
 
@@ -98,6 +98,8 @@ De onderstaande links verwijzen naar de canonieke HTML-pagina's. Dit bestand bie
 - [Liroma PrimeFORCE Max Gen5 review](https://red-light-therapy.nl/liroma-primeforce-max-gen5-review): Formaat, vloerstandaard, lichtmeting en aankoopvoorwaarden.
 - [VIVO Lux 450 S.2 review](https://red-light-therapy.nl/vivo-lux-450-s-2-review): Documentaire productanalyse met prijs en kosten van de optionele standaard.
 
-## Bijgewerkt op 25 november 2026
+## Bijgewerkt op 27 november 2026
 
-- [Roodlichttherapie aanbiedingen](https://red-light-therapy.nl/roodlichttherapie-aanbiedingen): Zeven op 25 november 2026 gecontroleerde prijzen, met actievoorwaarden en voorraadmeldingen.
+- [Roodlichttherapie aanbiedingen](https://red-light-therapy.nl/roodlichttherapie-aanbiedingen): Zeven op 27 november 2026 gecontroleerde prijzen, met actievoorwaarden en voorraadmeldingen.
+- [Liroma SHIELD rugband review](https://red-light-therapy.nl/liroma-shield-review): Pasvorm, bediening, accu en beschikbaarheid van de draadloze rugband.
+- [Roodlichtpaneel of LED-masker: wat past bij jou?](https://red-light-therapy.nl/roodlichtpaneel-of-led-masker): Keuzehulp op basis van de zone, opstelling en totale aankoopkosten.
